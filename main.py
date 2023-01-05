@@ -96,6 +96,7 @@ def getBeijinTime():
     type = ""
     hea = {'User-Agent': 'Mozilla/5.0'}
     url = r'https://www.beijing-time.org/t/time.asp'
+    #result='t0=new Date().getTime(); nyear=2023; nmonth=1; nday=5; nwday=4; nhrs=10; nmin=15; nsec=20;'
     if open_get_weather:
         getWeather()
     r = requests.get(url=url, headers=hea)
