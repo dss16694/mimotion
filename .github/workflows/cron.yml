@@ -4,6 +4,10 @@ on:
     workflows: ["刷步数"]
     types:
       - completed
+  repository_dispatch:
+    types:
+      - webhook-1
+      - webhook-2
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
